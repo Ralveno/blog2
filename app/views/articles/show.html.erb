@@ -1,0 +1,13 @@
+<!--<%= render "partials/nav"%>  se debe poner en application.html.erb -->
+
+
+<h1> <%= @article.title %></h1>
+<div>
+  <%= @article.content %>
+  <%= @article.id %>
+  <%= @article.title %>
+</div>
+
+<div>
+   <%= link_to "Eliminar el artículo", @article, method: :delete %>
+</div>

@@ -1,0 +1,21 @@
+<%= form_with(model: @article, local: true) do |form|  %>
+   <!-- Si no se coloca local:true  lo tratara de ejecutar en ajaz -->
+  <div>
+    <%=form.label :id %>
+    <%=form.text_field :id %>
+  </div>
+
+  <div>
+    <%=form.label :title %>
+    <%=form.text_field :title %>
+  </div>
+
+  <div>
+    <%=form.label :content %>
+    <%=form.text_area :content %>
+  </div>
+
+  <div>
+    <%=form.submit%>
+  </div>
+<%end%>

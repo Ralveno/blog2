@@ -1,0 +1,34 @@
+<!--
+<nav class="nav bg-light">
+   <li class="nav-item">
+       <%= link_to "Inicio", root_path, class:"nav-link"%>
+   </li>
+   <li class="nav-item">
+      <%= link_to "Artículos", articles_path, class:"nav-link"%>
+   </li>
+   <li class="nav-item">
+       <%= link_to "Escribir", new_articles_path, class:"nav-link"%>
+   </li>   
+</nav>
+Me llevo a un parcial , para reutilizar codigo
+
+<%= render "partials/nav"%>  se debe pner en application.html
+-->
+
+
+<h1>Mis Articulos</h1>
+<%= render @articles%>
+
+<!--
+<% @articles.each do |article|%>
+
+<div class="card" style="padding:15px;max-width:500px" > 
+   <h3 class = "text-uppercase"> <%= article.title%> </h3>
+   <%= article.id%>
+   <%= article.title%>
+   <p class="text-secondary"> <%= article.created_at%> </p>
+   <%= link_to "Ver más", article %>
+</div>
+ Me lo lleve al parcial article
+<%end%>
+-->
